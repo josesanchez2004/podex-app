@@ -1,0 +1,247 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* App-wide styling */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif; /* Step 8: Use modern font */
+  background-color: #f0f8ff;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Responsive layout improvements */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%; /* Full-width buttons on smaller screens */
+  }
+
+  .transcription-text {
+    font-size: 1rem;
+  }
+
+  ul li {
+    font-size: 0.9rem;
+  }
+}
+
+/* Body Styling */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+  overflow-x: hidden;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0; /* Default text color for dark mode */
+}
+
+/* Centered App Container */
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Header Styling */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #008080;
+}
+
+body.dark-mode h1 {
+  color: #80cbc4;
+}
+
+/* Feature Container */
+.feature-container {
+  background-color: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .feature-container {
+  background-color: #1e1e1e;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Buttons */
+.btn-primary,
+.btn-secondary {
+  display: block;
+  width: fit-content;
+  margin: 10px auto;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary {
+  background-color: #008080;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #006666;
+}
+
+.btn-secondary {
+  background-color: #00b3b3;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #007979;
+}
+
+/* Inputs */
+.file-input,
+.text-input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #008080;
+  border-radius: 5px;
+}
+
+.file-input:focus,
+.text-input:focus {
+  outline: none;
+  border-color: #005f5f;
+}
+
+/* Section Titles */
+h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #004d4d;
+}
+
+body.dark-mode h2 {
+  color: #80cbc4;
+}
+
+/* Transcription Styling */
+.transcription-text {
+  white-space: pre-wrap;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 10px 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #333; /* Default for light mode */
+}
+
+body.dark-mode .transcription-text {
+  background: #f9f9f9; /* Keep background light for better readability */
+  color: #000; /* Change text color to black */
+}
+
+/* Slider and Label Styling */
+.playback-options label {
+  margin: 0 10px;
+  font-size: 1rem;
+}
+
+.slider {
+  display: inline-block;
+  margin: 10px;
+}
+
+/* List Styling */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 5px 0;
+  text-align: center;
+  font-size: 1rem;
+  color: #333;
+}
+
+body.dark-mode li {
+  color: #e0e0e0;
+}
+
+/* Ensure Page Spacing */
+.app-container {
+  padding-bottom: 40px; /* Prevents bottom content cutoff */
+}
+
+
+
